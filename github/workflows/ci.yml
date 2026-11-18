@@ -1,0 +1,8 @@
+name: cz
+on: [push]
+jobs: 
+   test:
+     runs-on: ubuntu-latest
+     steps: 
+         - useS: actions/checkout@v4
+         - run: python3 test_app.py
